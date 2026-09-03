@@ -434,10 +434,12 @@ nav {
 }
 .pub-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.2rem;
   margin-top: 1rem;
+  align-items: start;
 }
+@media (max-width: 1000px) { .pub-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
 .pub-card {
   display: flex;
   flex-direction: column;
@@ -445,6 +447,7 @@ nav {
 }
 .pub-cover {
   aspect-ratio: 2/3;
+  max-width: 190px;
   border-radius: 3px;
   overflow: hidden;
   background: var(--bg2);
@@ -639,14 +642,13 @@ footer {
 <header class="hero">
   <span class="hero-eyebrow">Portafolio literario · 2026</span>
   <h1 class="hero-name">Ka<br>Luy<br>de Aliaga</h1>
-  <span class="hero-alias" data-editable>K. Luy de Aliaga · Kuy · Ka</span>
-  <p class="hero-tagline" data-editable>Magíster en Escritura Creativa · Narradora, poeta y redactora creativa.<br>Tres proyectos en búsqueda de casa editorial.</p>
+  <p class="hero-tagline" data-editable>Magíster en Escritura Creativa · Narradora, poeta y redactora creativa.</p>
   <div class="hero-scroll" style="display:none;">Obras</div>
 </header>
 
 <!-- OBRAS -->
 <section class="works" id="obras">
-  <p class="section-label">Obras</p>
+  <p class="section-label">Tres proyectos que buscan casa editorial</p>
 
   <!-- OBRA 1 -->
   <article class="work-item fade-in">
@@ -806,14 +808,16 @@ footer {
   <div class="about-grid">
     <div class="about-sticky">
       <p class="section-label">Sobre mí</p>
-      <h2 class="about-heading">Tres<br>proyectos<br>en <em>búsqueda</em><br>de editor.</h2>
-      <span class="about-heading-sub" data-editable>Lima · Buenos Aires<br>Poesía, narrativa,<br>no ficción.</span>
+      <h2 class="about-heading">Currículum<br>Vitae</h2>
+      <span class="about-heading-sub" data-editable>digamos que ganaste la carrera<br>y que el premio era otra carrera</span>
     </div>
     <div class="about-text fade-in">
       <p data-editable><strong>K. Luy de Aliaga</strong> (Kuy o simplemente Ka) es Magíster en Escritura Creativa de la UNTREF y Licenciada en Publicidad de la UPC. En 2004 estudió en la Escuela de Escritura Creativa de la CCPUCP con Iván Thays y Alonso Cueto.</p>
-      <p data-editable>Finalista de la Bienal Nacional de Cuento Copé 2016 con el relato «Conquiliología». Su novela <em>Compórtense como señoritas</em> recibió el Premio CD al Mejor Libro LGTBIQ+ del año.</p>
+      <p data-editable>Finalista de la Bienal Nacional de Cuento Copé 2016 con el relato «Conquiliología». Su novela <em>Compórtense como señoritas</em> recibió el Premio Crónicas de la Diversidad al Mejor Libro LGTBIQ+ del año.</p>
       <p>Tiene textos publicados en distintas antologías y revistas:</p>
       <ul class="pub-list">
+        <li><strong>El cielo manchado como un animal que huye</strong> · Homenaje a Blanca Varela — 2026 <em>(en prensa)</em></li>
+        <li><strong>Sin tijeras no hay verso</strong> · Diversa Cartonera — 2025</li>
         <li><strong>Un mundo raro</strong> · Editorial Dos Bigotes, España — 2024</li>
         <li><strong>La groupie literaria</strong> · Revista El Ansia, Argentina — 2023</li>
         <li><strong>El acento en la diferencia</strong> · Campo Letrado, Perú — 2022</li>
@@ -823,10 +827,9 @@ footer {
         <li><strong>Sexo al Cubo</strong> · Editores Altazor — 2017</li>
         <li><strong>Voces para Lilith</strong> · Estruendomudo — 2011</li>
         <li><strong>Ínsula Barataria</strong></li>
-        <li><strong>Sin tijeras no hay verso</strong></li>
       </ul>
       <p style="margin-top:1.4rem;" data-editable>Su obra ha sido traducida al <strong>inglés</strong> en <em>The Offing</em> (EEUU, 2021, traducción de Anna Vilner), al <strong>portugués</strong> en la <em>Revista Parênteses</em> (Brasil) y al <strong>francés</strong> por Aliados Literarios (Paris). Recientemente tradujo íntegramente su novela <em>Compórtense como señoritas</em> al inglés para presentarla en medios y concursos internacionales.</p>
-      <p data-editable>Actualmente trabaja como redactora creativa freelance, en proyectos de gestión cultural y en el final de su segunda novela. Ha sido gestora cultural del Stand Peruano en la Feria Internacional del Libro de Buenos Aires (FILBA) para el Ministerio de Cultura del Perú y la Embajada del Perú en Argentina durante 2023, 2024 y 2025.</p>
+      <p data-editable>Actualmente trabaja como redactora creativa freelance, en proyectos de gestión cultural y en el final de su segunda novela. Ha sido gestora cultural del Stand Peruano en la Feria Internacional del Libro de Buenos Aires (FILBA) durante 2023, 2024 y 2025.</p>
     </div>
   </div>
 </section>
