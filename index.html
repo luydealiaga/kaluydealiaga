@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ka Luy de Aliaga — Escritora</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230C0B08'/><text y='72' x='50' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-style='italic' fill='%23B89A5A'>Kuy</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230C0B08'/><text y='72' x='50' text-anchor='middle' font-family='Arial,sans-serif' font-size='42' font-weight='700' fill='%23B89A5A'>Kuy</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #0C0B08;
@@ -17,8 +17,9 @@
   --cream3: #8A8070;
   --gold: #B89A5A;
   --gold2: #7A6535;
-  --serif: 'Cormorant Garamond', Georgia, serif;
-  --sans: 'DM Sans', system-ui, sans-serif;
+  --indigo: #3D3A6E;
+  --serif: 'Bricolage Grotesque', system-ui, sans-serif;
+  --sans: 'Inter', system-ui, sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -26,7 +27,7 @@ body {
   background: var(--bg);
   color: var(--cream);
   font-family: var(--sans);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -143,20 +144,22 @@ nav {
 .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--gold); flex-shrink: 0; }
 .hero-name {
   font-family: var(--serif);
-  font-size: clamp(3.8rem, 11vw, 9rem);
-  font-weight: 300;
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-weight: 700;
+  font-style: normal;
   line-height: 0.92;
-  color: var(--cream);
+  color: var(--indigo);
   margin-bottom: 2rem;
 }
-.hero-name em { font-style: italic; color: var(--gold); }
+.hero-name em { color: var(--indigo); font-weight: 700; font-style: normal; }
 .hero-alias {
-  font-family: var(--serif);
-  font-size: 1.1rem;
-  font-style: italic;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--cream2);
   margin-bottom: 0.8rem;
   display: block;
+  letter-spacing: 0.04em;
 }
 .hero-tagline {
   max-width: 500px;
@@ -289,13 +292,13 @@ nav {
 }
 .work-title {
   font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 300;
-  line-height: 1.05;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.1;
   color: var(--cream);
   margin-bottom: 1.2rem;
 }
-.work-title em { font-style: italic; }
+.work-title em { font-weight: 600; }
 .status-badge {
   display: inline-flex;
   align-items: center;
@@ -360,7 +363,7 @@ nav {
   flex-shrink: 0;
   gap: 1rem;
 }
-.modal-title { font-family: var(--serif); font-size: 1.1rem; font-style: italic; color: var(--cream); }
+.modal-title { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--cream); }
 .modal-right { display: flex; align-items: center; gap: 1.5rem; flex-shrink: 0; }
 .modal-note { font-size: 0.65rem; color: var(--gold); letter-spacing: 0.08em; }
 .modal-note a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
@@ -381,7 +384,7 @@ nav {
   text-align: center;
 }
 .modal-placeholder svg { width: 44px; height: 44px; stroke: var(--gold2); fill: none; stroke-width: 1; margin-bottom: 0.5rem; }
-.modal-placeholder h3 { font-family: var(--serif); font-size: 1.4rem; font-style: italic; color: var(--cream); font-weight: 300; }
+.modal-placeholder h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--cream); }
 .modal-placeholder p { font-size: 0.85rem; color: var(--cream2); max-width: 340px; line-height: 1.75; }
 .modal-placeholder a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 
@@ -394,13 +397,13 @@ nav {
 }
 .about-grid { display: grid; grid-template-columns: 1fr 1.7fr; gap: 6rem; align-items: start; }
 .about-sticky { position: sticky; top: 8rem; }
-.about-heading { font-family: var(--serif); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 300; line-height: 1.0; color: var(--cream); }
-.about-heading em { font-style: italic; color: var(--gold); }
-.about-heading-sub { font-family: var(--serif); font-size: 1rem; font-style: italic; color: var(--cream3); margin-top: 1.5rem; display: block; line-height: 1.6; }
+.about-heading { font-family: var(--serif); font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 700; line-height: 1.05; color: var(--cream); }
+.about-heading em { color: var(--gold); font-weight: 700; }
+.about-heading-sub { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--cream3); margin-top: 1.5rem; display: block; line-height: 1.7; letter-spacing: 0.02em; }
 .about-text { font-size: 0.92rem; color: var(--cream2); line-height: 1.95; }
 .about-text p + p { margin-top: 1.4rem; }
 .about-text strong { color: var(--cream); font-weight: 400; }
-.about-text em { font-style: italic; color: var(--cream); }
+.about-text em { font-weight: 500; color: var(--cream); }
 .pub-list { margin-top: 1.4rem; padding-left: 1rem; border-left: 2px solid rgba(184,154,90,0.25); }
 .pub-list li { font-size: 0.85rem; color: var(--cream3); line-height: 1.7; margin-bottom: 0.35rem; }
 .pub-list li strong { color: var(--cream2); font-weight: 400; }
@@ -412,7 +415,7 @@ nav {
   text-align: center;
   padding: 6rem 2.5rem 5rem;
 }
-.contact-heading { font-family: var(--serif); font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 300; font-style: italic; color: var(--cream); margin-bottom: 1rem; }
+.contact-heading { font-family: var(--serif); font-size: clamp(2.2rem, 6vw, 4.5rem); font-weight: 600; color: var(--cream); margin-bottom: 1rem; }
 .contact-sub { font-size: 0.9rem; color: var(--cream2); margin-bottom: 3rem; max-width: 420px; margin-left: auto; margin-right: auto; line-height: 1.8; }
 .contact-link {
   display: inline-flex; align-items: center; gap: 0.6rem;
@@ -475,7 +478,7 @@ footer {
 <!-- HERO -->
 <header class="hero">
   <span class="hero-eyebrow">Portafolio literario · 2026</span>
-  <h1 class="hero-name">Ka<br><em>Luy de</em><br>Aliaga</h1>
+  <h1 class="hero-name">Ka<br>Luy<br>de Aliaga</h1>
   <span class="hero-alias" data-editable>K. Luy de Aliaga · Kuy · Ka</span>
   <p class="hero-tagline" data-editable>Magíster en Escritura Creativa · Narradora, poeta y redactora creativa.<br>Tres proyectos en búsqueda de casa editorial.</p>
   <div class="hero-scroll" style="display:none;">Obras</div>
