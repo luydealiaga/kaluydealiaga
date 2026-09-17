@@ -3,25 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ka Luy de Aliaga — Escritora, poeta y redactora creativa</title>
-<meta name="description" content="Portafolio de K. Luy de Aliaga: la novela Compórtense como señoritas, los poemarios La Fiesta Postergada y 2472 kilómetros al norte, y tres obras inéditas.">
-<meta name="author" content="Ka Luy de Aliaga">
-<link rel="canonical" href="https://luydealiaga.com/">
-<meta property="og:type" content="profile">
-<meta property="og:site_name" content="Ka Luy de Aliaga">
-<meta property="og:locale" content="es_ES">
-<meta property="og:url" content="https://luydealiaga.com/">
-<meta property="og:title" content="Ka Luy de Aliaga — Escritora, poeta y redactora creativa">
-<meta property="og:description" content="Novela, poesía y no ficción. Cuatro libros publicados en Perú y Chile, y tres obras en búsqueda de editor.">
-<meta property="og:image" content="https://luydealiaga.com/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Ka Luy de Aliaga — portafolio literario">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ka Luy de Aliaga — Escritora, poeta y redactora creativa">
-<meta name="twitter:description" content="Novela, poesía y no ficción. Cuatro libros publicados en Perú y Chile, y tres obras en búsqueda de editor.">
-<meta name="twitter:image" content="https://luydealiaga.com/og-image.jpg">
-<meta name="theme-color" content="#0C0B08">
+<title>Ka Luy de Aliaga — Escritora</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230C0B08'/><text y='72' x='50' text-anchor='middle' font-family='Arial,sans-serif' font-size='42' font-weight='700' fill='%23B89A5A'>Kuy</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +17,7 @@
   --cream3: #8A8070;
   --gold: #B89A5A;
   --gold2: #7A6535;
-  --indigo: #3D3A6E;          /* marca — usar sobre fondo claro */
-  --indigo-light: #7A75BC;    /* mismo índigo aclarado para fondo oscuro — contraste 4.8:1 */
+  --indigo: #3D3A6E;
   --serif: 'Bricolage Grotesque', system-ui, sans-serif;
   --sans: 'Inter', system-ui, sans-serif;
 }
@@ -106,25 +87,6 @@ body::before {
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 #edit-exit.on { display: block; }
-#edit-save {
-  display: none;
-  position: fixed;
-  bottom: 1.5rem;
-  right: 11.5rem;
-  z-index: 998;
-  font-family: var(--sans);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--bg2);
-  background: var(--gold);
-  border: none;
-  border-radius: 2px;
-  padding: 0.65rem 1.2rem;
-  cursor: pointer;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-}
-#edit-save.on { display: block; }
 
 /* ── NAV ── */
 nav {
@@ -186,10 +148,10 @@ nav {
   font-weight: 700;
   font-style: normal;
   line-height: 0.92;
-  color: var(--indigo-light);
+  color: var(--indigo);
   margin-bottom: 2rem;
 }
-.hero-name em { color: var(--indigo-light); font-weight: 700; font-style: normal; }
+.hero-name em { color: var(--indigo); font-weight: 700; font-style: normal; }
 .hero-alias {
   font-family: var(--sans);
   font-size: 0.9rem;
@@ -295,7 +257,8 @@ nav {
   inset: 0;
   background: repeating-linear-gradient(-45deg, transparent, transparent 3px, rgba(255,255,255,0.025) 3px, rgba(255,255,255,0.025) 4px);
 }
-.cover-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; z-index: 0; }
+.cover-2 { background-image: url("cover-sudapalabras.jpg"); background-size: cover; background-position: center; }
+.cover-3 { background-image: url("cover-barrerelmar.jpg"); background-size: cover; background-position: center; }
 .cover-label {
   position: relative;
   z-index: 1;
@@ -434,12 +397,10 @@ nav {
 }
 .pub-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
   margin-top: 1rem;
-  align-items: start;
 }
-@media (max-width: 1000px) { .pub-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
 .pub-card {
   display: flex;
   flex-direction: column;
@@ -447,7 +408,6 @@ nav {
 }
 .pub-cover {
   aspect-ratio: 2/3;
-  max-width: 190px;
   border-radius: 3px;
   overflow: hidden;
   background: var(--bg2);
@@ -587,44 +547,10 @@ footer {
   #edit-toggle { bottom: 1rem; right: 1rem; }
 }
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ka Luy de Aliaga",
-  "alternateName": ["K. Luy de Aliaga", "Karen Luy de Aliaga", "Kuy"],
-  "url": "https://luydealiaga.com/",
-  "image": "https://luydealiaga.com/og-image.jpg",
-  "email": "luy.de.aliaga@gmail.com",
-  "jobTitle": "Escritora",
-  "description": "Narradora, poeta y redactora creativa. Mag\u00edster en Escritura Creativa (UNTREF).",
-  "nationality": "Peruana",
-  "homeLocation": {"@type": "Place", "name": "Buenos Aires, Argentina"},
-  "knowsLanguage": ["es", "en"],
-  "sameAs": [],
-  "alumniOf": [
-    {"@type": "CollegeOrUniversity", "name": "Universidad Nacional de Tres de Febrero (UNTREF)"},
-    {"@type": "CollegeOrUniversity", "name": "Universidad Peruana de Ciencias Aplicadas (UPC)"}
-  ],
-  "knowsAbout": ["Narrativa", "Poes\u00eda", "No ficci\u00f3n", "Redacci\u00f3n creativa", "Gesti\u00f3n cultural"]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {"@type":"Book","name":"Comp\u00f3rtense como se\u00f1oritas","author":{"@type":"Person","name":"Ka Luy de Aliaga"},"genre":"Novela","inLanguage":"es","datePublished":"2019","publisher":{"@type":"Organization","name":"Narrar / Paraca\u00eddas Editores"}},
-    {"@type":"Book","name":"Comp\u00f3rtense como se\u00f1oritas (edici\u00f3n ilustrada)","author":{"@type":"Person","name":"Ka Luy de Aliaga"},"genre":"Novela ilustrada","inLanguage":"es","datePublished":"2021","publisher":{"@type":"Organization","name":"Cocorocoq Editoras"}},
-    {"@type":"Book","name":"La Fiesta Postergada","author":{"@type":"Person","name":"Ka Luy de Aliaga"},"genre":"Poes\u00eda","inLanguage":"es","datePublished":"2025","publisher":{"@type":"Organization","name":"Editorial Madrepora"}},
-    {"@type":"Book","name":"2472 kil\u00f3metros al norte","author":{"@type":"Person","name":"Ka Luy de Aliaga"},"genre":"Poes\u00eda","inLanguage":"es","datePublished":"2015","publisher":{"@type":"Organization","name":"Paraca\u00eddas Editores"}}
-  ]
-}
-</script>
 </head>
 <body>
 
-<div id="edit-banner">✏️ Modo edición activo — editá el texto y después tocá “Descargar index.html” para guardar los cambios</div>
-<button id="edit-save" onclick="exportHTML()">⬇ Descargar index.html</button>
+<div id="edit-banner">✏️ Modo edición activo — haz clic en cualquier texto para editarlo</div>
 <button id="edit-exit" onclick="toggleEdit()">✓ Salir de edición</button>
 
 <!-- NAV -->
@@ -642,43 +568,18 @@ footer {
 <header class="hero">
   <span class="hero-eyebrow">Portafolio literario · 2026</span>
   <h1 class="hero-name">Ka<br>Luy<br>de Aliaga</h1>
-  <p class="hero-tagline" data-editable>Magíster en Escritura Creativa · Narradora, poeta y redactora creativa.</p>
+  <span class="hero-alias" data-editable>K. Luy de Aliaga · Kuy · Ka</span>
+  <p class="hero-tagline" data-editable>Magíster en Escritura Creativa · Narradora, poeta y redactora creativa.<br>Tres proyectos en búsqueda de casa editorial.</p>
   <div class="hero-scroll" style="display:none;">Obras</div>
 </header>
 
 <!-- OBRAS -->
 <section class="works" id="obras">
-  <p class="section-label">Tres proyectos que buscan casa editorial</p>
+  <p class="section-label">Obras</p>
 
   <!-- OBRA 1 -->
   <article class="work-item fade-in">
-    <button class="work-cover" onclick="openModal('Sanguche de Nubes')" aria-label="Ver muestra de Sanguche de Nubes">
-      <img class="cover-img" src="cover-sanguche.jpg" alt="Portada de Sanguche de Nubes" loading="lazy" decoding="async" width="600" height="957">
-      <div class="cover-texture"></div>
-      <div class="cover-hover"><span class="cover-hover-pill">Leer muestra</span></div>
-    </button>
-    <div class="work-info">
-      <p class="work-genre">Narrativa infantil</p>
-      <h2 class="work-title"><em>Sanguche de Nubes</em></h2>
-      <span class="status-badge status-complete">Completo</span>
-      <p class="work-desc" data-editable>Dos hermanos necesitan descubrir por qué a su tía le duele la panza al ver las noticias de ese país lejano en el que nació. Para aliviarla, idean cocinarle el mejor sanguche de nubes que se haya hecho.</p>
-      <div class="work-meta">
-        <div class="meta-item">
-          <span class="meta-label">Estado</span>
-          <span class="meta-value" data-editable>Texto finalizado</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Ilustraciones</span>
-          <span class="meta-value" data-editable>Pendientes</span>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- OBRA 2 -->
-  <article class="work-item fade-in">
-    <button class="work-cover" onclick="openModal('Sudapalabras')" aria-label="Ver muestra de Sudapalabras">
-      <img class="cover-img" src="cover-sudapalabras.jpg" alt="Portada de Sudapalabras" loading="lazy" decoding="async" width="600" height="957">
+    <button class="work-cover cover-2" onclick="openModal('Sudapalabras')" aria-label="Ver muestra de Sudapalabras">
       <div class="cover-texture"></div>
       <div class="cover-hover"><span class="cover-hover-pill">Leer muestra</span></div>
     </button>
@@ -702,8 +603,7 @@ footer {
 
   <!-- OBRA 3 -->
   <article class="work-item fade-in">
-    <button class="work-cover" onclick="openModal('Barrer el Mar')" aria-label="Ver muestra de Barrer el Mar">
-      <img class="cover-img" src="cover-barrerelmar.jpg" alt="Portada de Barrer el Mar" loading="lazy" decoding="async" width="600" height="957">
+    <button class="work-cover cover-3" onclick="openModal('Barrer el Mar')" aria-label="Ver muestra de Barrer el Mar">
       <div class="cover-texture"></div>
       <div class="cover-hover"><span class="cover-hover-pill">Leer muestra</span></div>
     </button>
@@ -747,7 +647,7 @@ footer {
 
     <!-- Compórtense (Perú) -->
     <article class="pub-card fade-in">
-      <div class="pub-cover"><img src="ccs-peru.jpg" alt="Compórtense como señoritas · Edición Perú" loading="lazy" decoding="async" width="900" height="1319"></div>
+      <div class="pub-cover"><img src="ccs-peru.png" alt="Compórtense como señoritas · Edición Perú"></div>
       <div class="pub-info">
         <p class="pub-genre">Novela · Edición Perú</p>
         <h3 class="pub-title">Compórtense como señoritas</h3>
@@ -761,7 +661,7 @@ footer {
 
     <!-- Compórtense (Chile - ilustrada) -->
     <article class="pub-card fade-in">
-      <div class="pub-cover"><img src="ccs-chile.jpg" alt="Compórtense como señoritas · Edición Chile ilustrada" loading="lazy" decoding="async" width="640" height="862"></div>
+      <div class="pub-cover"><img src="ccs-chile.png" alt="Compórtense como señoritas · Edición Chile ilustrada"></div>
       <div class="pub-info">
         <p class="pub-genre">Novela ilustrada · Edición Chile</p>
         <h3 class="pub-title">Compórtense como señoritas</h3>
@@ -775,7 +675,7 @@ footer {
 
     <!-- La Fiesta Postergada -->
     <article class="pub-card fade-in">
-      <div class="pub-cover"><img src="fiesta-postergada.jpg" alt="La Fiesta Postergada" loading="lazy" decoding="async" width="856" height="1206"></div>
+      <div class="pub-cover"><img src="fiesta-postergada.png" alt="La Fiesta Postergada"></div>
       <div class="pub-info">
         <p class="pub-genre">Poesía</p>
         <h3 class="pub-title">La Fiesta Postergada</h3>
@@ -789,7 +689,7 @@ footer {
 
     <!-- 2472 km al norte -->
     <article class="pub-card fade-in">
-      <div class="pub-cover"><img src="2472-kilometros.jpg" alt="2472 kilómetros al norte" loading="lazy" decoding="async" width="900" height="1419"></div>
+      <div class="pub-cover"><img src="2472-kilometros.jpg" alt="2472 kilómetros al norte"></div>
       <div class="pub-info">
         <p class="pub-genre">Poesía</p>
         <h3 class="pub-title">2472 kilómetros al norte</h3>
@@ -808,16 +708,14 @@ footer {
   <div class="about-grid">
     <div class="about-sticky">
       <p class="section-label">Sobre mí</p>
-      <h2 class="about-heading">Currículum<br>Vitae</h2>
-      <span class="about-heading-sub" data-editable>digamos que ganaste la carrera<br>y que el premio era otra carrera</span>
+      <h2 class="about-heading">Tres<br>proyectos<br>en <em>búsqueda</em><br>de editor.</h2>
+      <span class="about-heading-sub" data-editable>Lima · Buenos Aires<br>Poesía, narrativa,<br>no ficción.</span>
     </div>
     <div class="about-text fade-in">
       <p data-editable><strong>K. Luy de Aliaga</strong> (Kuy o simplemente Ka) es Magíster en Escritura Creativa de la UNTREF y Licenciada en Publicidad de la UPC. En 2004 estudió en la Escuela de Escritura Creativa de la CCPUCP con Iván Thays y Alonso Cueto.</p>
-      <p data-editable>Finalista de la Bienal Nacional de Cuento Copé 2016 con el relato «Conquiliología». Su novela <em>Compórtense como señoritas</em> recibió el Premio Crónicas de la Diversidad al Mejor Libro LGTBIQ+ del año.</p>
+      <p data-editable>Finalista de la Bienal Nacional de Cuento Copé 2016 con el relato «Conquiliología». Su novela <em>Compórtense como señoritas</em> recibió el Premio CD al Mejor Libro LGTBIQ+ del año.</p>
       <p>Tiene textos publicados en distintas antologías y revistas:</p>
       <ul class="pub-list">
-        <li><strong>El cielo manchado como un animal que huye</strong> · Homenaje a Blanca Varela — 2026 <em>(en prensa)</em></li>
-        <li><strong>Sin tijeras no hay verso</strong> · Diversa Cartonera — 2025</li>
         <li><strong>Un mundo raro</strong> · Editorial Dos Bigotes, España — 2024</li>
         <li><strong>La groupie literaria</strong> · Revista El Ansia, Argentina — 2023</li>
         <li><strong>El acento en la diferencia</strong> · Campo Letrado, Perú — 2022</li>
@@ -827,9 +725,10 @@ footer {
         <li><strong>Sexo al Cubo</strong> · Editores Altazor — 2017</li>
         <li><strong>Voces para Lilith</strong> · Estruendomudo — 2011</li>
         <li><strong>Ínsula Barataria</strong></li>
+        <li><strong>Sin tijeras no hay verso</strong></li>
       </ul>
       <p style="margin-top:1.4rem;" data-editable>Su obra ha sido traducida al <strong>inglés</strong> en <em>The Offing</em> (EEUU, 2021, traducción de Anna Vilner), al <strong>portugués</strong> en la <em>Revista Parênteses</em> (Brasil) y al <strong>francés</strong> por Aliados Literarios (Paris). Recientemente tradujo íntegramente su novela <em>Compórtense como señoritas</em> al inglés para presentarla en medios y concursos internacionales.</p>
-      <p data-editable>Actualmente trabaja como redactora creativa freelance, en proyectos de gestión cultural y en el final de su segunda novela. Ha sido gestora cultural del Stand Peruano en la Feria Internacional del Libro de Buenos Aires (FILBA) durante 2023, 2024 y 2025.</p>
+      <p data-editable>Actualmente trabaja como redactora creativa freelance, en proyectos de gestión cultural y en el final de su segunda novela. Ha sido gestora cultural del Stand Peruano en la Feria Internacional del Libro de Buenos Aires (FILBA) para el Ministerio de Cultura del Perú y la Embajada del Perú en Argentina durante 2023, 2024 y 2025.</p>
     </div>
   </div>
 </section>
@@ -859,7 +758,6 @@ footer {
    4. Pegá solo el ID (entre /d/ y /view) abajo
 ─────────────────────────────────────────────────────────────── */
 const DRIVE_IDS = {
-  "Sanguche de Nubes":  "1WDrXxHFgF9NfnenyKJbWRk7LrfBQBUFU",
   "Sudapalabras":       "1yjEPcHhUmosUUqnmrH9NT3UyxeDHulu2",
   "Barrer el Mar":      "1iZiMONKqRxEmQO8_0Kkr35G4VT-Oxl6c"
 };
@@ -878,10 +776,6 @@ function openModal(title) {
   document.getElementById('modal-title').textContent = title;
   const content = document.getElementById('modal-content');
   const isPlaceholder = !driveId || driveId.startsWith('DRIVE_ID_');
-
-  // Registra en GoatCounter qué muestra se abrió (este es el dato que importa)
-  trackEvent('/muestra/' + title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
-             'Muestra abierta: ' + title);
 
   // Push state so el botón Atrás cierra el modal en vez de salir de la página
   history.pushState({ modal: true }, '');
@@ -922,18 +816,6 @@ window.addEventListener('popstate', (e) => {
   }
 });
 
-/* Clics salientes: prensa, fichas editoriales y contacto */
-document.addEventListener('click', function (e) {
-  const a = e.target.closest && e.target.closest('a');
-  if (!a) return;
-  const href = a.getAttribute('href') || '';
-  if (href.indexOf('mailto:') === 0) {
-    trackEvent('/contacto/email', 'Clic en el email');
-  } else if (/^https?:/.test(href) && a.hostname && a.hostname !== location.hostname) {
-    trackEvent('/salida/' + a.hostname, 'Clic externo: ' + (a.textContent || '').trim().slice(0, 60));
-  }
-});
-
 function handleOverlayClick(e) {
   if (e.target === document.getElementById('modal-overlay')) closeModal();
 }
@@ -950,8 +832,7 @@ const editables = document.querySelectorAll('[data-editable]');
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { closeModal(); return; }
   if (e.target.isContentEditable) return;
-  if (e.key.length !== 1) return;              // ignora Shift, flechas, etc.
-  keyBuffer += e.key.toUpperCase();            // funciona con o sin mayúsculas
+  keyBuffer += e.key;
   if (keyBuffer.length > SECRET.length) keyBuffer = keyBuffer.slice(-SECRET.length);
   if (keyBuffer === SECRET) { keyBuffer = ''; toggleEdit(); }
 });
@@ -964,32 +845,8 @@ function toggleEdit() {
   editables.forEach(el => { el.contentEditable = editMode ? 'true' : 'false'; });
   banner.classList.toggle('on', editMode);
   exitBtn.classList.toggle('on', editMode);
-  document.getElementById('edit-save').classList.toggle('on', editMode);
   nav.style.top = editMode ? '30px' : '';
   if (editMode) exitBtn.onclick = toggleEdit;
-}
-
-/* ─── EXPORTAR ─ descarga el index.html con tus ediciones aplicadas ───
-   Editás en la página → Descargar index.html → subirlo a GitHub (Add file).
-─────────────────────────────────────────────────── */
-function exportHTML() {
-  const clone = document.documentElement.cloneNode(true);
-  clone.querySelectorAll('[contenteditable]').forEach(el => el.removeAttribute('contenteditable'));
-  clone.querySelectorAll('.fade-in.visible').forEach(el => el.classList.remove('visible'));
-  const banner = clone.querySelector('#edit-banner'); if (banner) banner.classList.remove('on');
-  const save   = clone.querySelector('#edit-save');   if (save)   save.classList.remove('on');
-  const exit   = clone.querySelector('#edit-exit');   if (exit)   exit.classList.remove('on');
-  const nav    = clone.querySelector('#main-nav');    if (nav)    nav.removeAttribute('style');
-  const mc     = clone.querySelector('#modal-content'); if (mc)   mc.innerHTML = '';
-  const ov     = clone.querySelector('#modal-overlay'); if (ov)   ov.classList.remove('active');
-
-  const out = `<!DOCTYPE html>
-` + clone.outerHTML;
-  const url = URL.createObjectURL(new Blob([out], { type: 'text/html;charset=utf-8' }));
-  const a = document.createElement('a');
-  a.href = url; a.download = 'index.html';
-  document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
 
 /* ─── FADE IN ────────────────────────────────────────────────── */
